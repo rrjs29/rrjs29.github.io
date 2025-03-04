@@ -1,0 +1,9 @@
+/* Style for the image */
+img {
+  border-radius: 50%; /* Makes the image circular */
+  width: 200px; /* Sets the width of the image */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Centers the image */
+  margin: 0 auto; /* Centers the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
