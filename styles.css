@@ -1,9 +1,44 @@
-/* Style for the image */
-img {
-  border-radius: 50%; /* Makes the image circular */
-  width: 200px; /* Sets the width of the image */
-  height: auto; /* Maintains the aspect ratio */
-  display: block; /* Centers the image */
-  margin: 0 auto; /* Centers the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+/* Center the body content */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Style for the header */
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the main content */
+main {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Style for the footer */
+footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the profile picture */
+.profile-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
