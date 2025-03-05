@@ -43,10 +43,35 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Center the profile picture */
+.profile-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.profile-text {
+  max-width: 700px; /* Adjust the width as needed */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+  text-align: left; /* Ensure text is aligned to the left */
+  font-size: 16px; /* Increase the font size as needed */
+  line-height: 1.6; /* Adjust the line height as needed */
+}
+
+.Large-font {
+  font-size: 20px; /* Larger font size for highlighted text */
+}
+
 .profile-picture {
-  border-radius: 50%;
-  width: 200px;
+  width: 250px; /* Adjust the size as needed */
+  height: auto; /* Ensure the height matches the width for a square shape */
+  object-fit: cover; /* This ensures the image covers the entire area */
+  margin-right: 18px; /* Adjust the spacing as needed */
+}
+
+/* Center the profile picture */
+.profile-picture-02 {
+  border-radius: 75%;
+  width: 350px;
   height: auto;
   display: block;
   margin: 20px auto;
