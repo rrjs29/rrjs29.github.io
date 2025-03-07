@@ -28,6 +28,12 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+li {
+    text-align: left; /* Align text to the left */
+    margin: 0 0 7.5px 0; /* Add space between list items */
+    line-height: 1.5; /* Regular line spacing within each item */
+}
+
 /* Style for the main content */
 main {
   width: 100%;
@@ -44,34 +50,56 @@ footer {
 }
 
 .profile-container {
-  display: flex;
-  align-items: flex-start; /* Align items at the top */
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-top: 20px; /* Add some top margin */
+}
+
+.profile-photo-container {
+    display: flex;
+    flex-direction: column; /* Stack photo and text below it vertically */
+    align-items: center; /* Center items horizontally */
+    margin-right: 20px; /* Add some space to the right of the photo container */
+    margin-left: 50px
+}
+
+.profile-photo {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space below the photo */
+}
+
+.profile-text-below {
+    text-align: center; /* Center text below the photo */
 }
 
 .profile-text {
-  max-width: 700px; /* Adjust the width as needed */
-  margin: 0; /* Remove any default margins */
-  padding: 0; /* Remove any default padding */
-  text-align: left; /* Ensure text is aligned to the left */
-  font-size: 16px; /* Increase the font size as needed */
-  line-height: 1.6; /* Adjust the line height as needed */
+    max-width: 600px; /* Adjust the width as needed */
+    text-align: left; /* Ensure text is aligned to the left */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.8; /* Adjust the line height as needed */
+}
+
+.profile-text p {
+    margin: 10px 0; /* Add some margin between paragraphs */
+}
+
+.profile-text-below i, .profile-text-below img.icon {
+    margin-right: 5px; /* Add some space between the icon and the text */
+    vertical-align: middle; /* Align icons with the text */
+    width: 20px; /* Set a fixed width for the icons */
+    height: auto; /* Maintain aspect ratio for the icons */
 }
 
 .Large-font {
-  font-size: 20px; /* Larger font size for highlighted text */
+  font-size: 18px; /* Larger font size for highlighted text */
 }
 
-.profile-picture {
-  width: 250px; /* Adjust the size as needed */
-  height: auto; /* Ensure the height matches the width for a square shape */
-  object-fit: cover; /* This ensures the image covers the entire area */
-  margin-right: 18px; /* Adjust the spacing as needed */
-}
 
 /* Center the profile picture */
 .profile-picture-02 {
   border-radius: 75%;
-  width: 350px;
+  width: 300px;
   height: auto;
   display: block;
   margin: 20px auto;
