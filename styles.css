@@ -50,32 +50,51 @@ footer {
 }
 
 .profile-container {
-    display: flex;
-    align-items: flex-start; /* Align items at the top */
-    margin-top: 20px; /* Add some top margin */
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px; /* Adjust the gap between items */
 }
 
 .profile-photo-container {
-    display: flex;
-    flex-direction: column; /* Stack photo and text below it vertically */
-    align-items: center; /* Center items horizontally */
-    margin-right: 0px; /* Add some space to the right of the photo container */
-    margin-left: 0px
+    flex: 0 0 auto; /* Prevent the photo container from shrinking */
+    text-align: center; /* Center the photo and text below it */
 }
 
 .profile-photo {
-    width: 200px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add some space below the photo */
-}
-
-.profile-text-below {
-    text-align: center; /* Center text below the photo */
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.8; /* Adjust the line height as needed */
+    max-width: 200px; /* Set a maximum width for the photo */
+    width: 100%; /* Ensure the photo is responsive */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 .profile-text {
+    max-width: 600px; /* Adjust the width as needed */
+    text-align: left; /* Ensure text is aligned to the left */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.2; /* Adjust the line height as needed */
+    padding: 10px; /* Add some padding for better readability */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-top: 0; /* Ensure no extra margin at the top */
+}
+
+.profile-text-below {
+    margin-top: 10px; /* Add some space between the photo and the text below */
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .profile-text {
+        max-width: 100%; /* Make the text box width 100% on small screens */
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+}
+
+.profile-text-02 {
     max-width: 600px; /* Adjust the width as needed */
     text-align: justify; /* Ensure text is aligned to the left */
     font-size: 16px; /* Adjust the font size as needed */
@@ -83,8 +102,15 @@ footer {
     margin: 0 auto; /* Center the text box horizontally */
 }
 
-.profile-text p {
-    margin: 10px 0; /* Add some margin between paragraphs */
+.profile-text-02 h2 {
+    text-align: center; /* Center the title */
+}
+
+@media (max-width: 600px) {
+    .profile-text-02{
+        max-width: 100%; /* Make the text box width 100% on small screens */
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
 }
 
 .profile-text-below i, .profile-text-below img.icon {
