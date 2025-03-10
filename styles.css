@@ -29,7 +29,7 @@ header {
 }
 
 li {
-    text-align: left; /* Align text to the left */
+    text-align: justify; /* Align text to justify */
     margin: 0 0 7.5px 0; /* Add space between list items */
     line-height: 1.5; /* Regular line spacing within each item */
 }
@@ -37,7 +37,7 @@ li {
 /* Style for the main content */
 main {
   width: 100%;
-  max-width: 800px;
+  max-width: 750px;
   padding: 20px;
 }
 
@@ -59,8 +59,8 @@ footer {
     display: flex;
     flex-direction: column; /* Stack photo and text below it vertically */
     align-items: center; /* Center items horizontally */
-    margin-right: 20px; /* Add some space to the right of the photo container */
-    margin-left: 50px
+    margin-right: 0px; /* Add some space to the right of the photo container */
+    margin-left: 0px
 }
 
 .profile-photo {
@@ -71,6 +71,8 @@ footer {
 
 .profile-text-below {
     text-align: center; /* Center text below the photo */
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.8; /* Adjust the line height as needed */
 }
 
 .profile-text {
