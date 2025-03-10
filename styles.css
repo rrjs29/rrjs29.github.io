@@ -77,9 +77,10 @@ footer {
 
 .profile-text {
     max-width: 600px; /* Adjust the width as needed */
-    text-align: left; /* Ensure text is aligned to the left */
+    text-align: justify; /* Ensure text is aligned to the left */
     font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.8; /* Adjust the line height as needed */
+    line-height: 1.5; /* Adjust the line height as needed */
+    margin: 0 auto; /* Center the text box horizontally */
 }
 
 .profile-text p {
