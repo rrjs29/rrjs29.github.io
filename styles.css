@@ -29,8 +29,8 @@ header {
 }
 
 ul, ol {
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    padding-left: 0; /* Remove default padding */
+    margin-left: 0; /* Remove default margin */
 }
 
 li {
