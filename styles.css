@@ -95,10 +95,10 @@ footer {
 }
 
 .profile-text-02 {
-    max-width: 600px; /* Adjust the width as needed */
+    max-width: 550px; /* Adjust the width as needed */
     text-align: justify; /* Ensure text is aligned to the left */
     font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Adjust the line height as needed */
+    line-height: 1.8; /* Adjust the line height as needed */
     margin: 0 auto; /* Center the text box horizontally */
 }
 
@@ -106,9 +106,9 @@ footer {
     text-align: center; /* Center the title */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
     .profile-text-02{
-        max-width: 95%; /* Make the text box width 100% on small screens */
+        max-width: 90%; /* Make the text box width 100% on small screens */
         font-size: 14px; /* Adjust the font size for smaller screens */
     }
 }
