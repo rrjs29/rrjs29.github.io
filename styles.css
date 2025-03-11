@@ -28,6 +28,11 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+ul, ol {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
 li {
     text-align: justify; /* Align text to justify */
     margin: 0 0 7.5px 0; /* Add space between list items */
