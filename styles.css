@@ -30,7 +30,7 @@ header {
 
 ul, ol {
     padding-left: 0; /* Remove default padding */
-    margin-left: 0; /* Remove default margin */
+    margin-left: 5px; /* Remove default margin */
 }
 
 li {
